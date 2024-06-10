@@ -3,7 +3,7 @@ import {  TSidebarItem, TUserPath } from "../types";
 
 
 
-export const sidebarItemsGenerators = (items :TUserPath[], role) => {
+export const sidebarItemsGenerators = (items :TUserPath[], role: string) => {
     
     const sidebarItems = items.reduce(
         (acc: TSidebarItem[], item) => {

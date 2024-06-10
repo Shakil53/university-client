@@ -3,14 +3,17 @@ import { sidebarItemsGenerators } from '../../utils/sidebarItemsGenerators';
 import { adminPaths } from '../../routes/admin.routes';
 import { facultyPaths } from '../../routes/faculty.routes';
 import { studentPaths } from '../../routes/student.routes';
+
 const { Sider } = Layout;
+
+
 const userRole = {
   ADMIN: 'admin',
   FACULTY: 'faculty',
   STUDENT: 'student',
 }
 const Sidebar = () => {
-  const role = 'student';
+  const role = 'admin';
     let sidebarItems;
   
   switch (role) {
@@ -25,7 +28,7 @@ const Sidebar = () => {
       break;
     
     default:
-      break
+      break;
   }
     return (
         <Sider
